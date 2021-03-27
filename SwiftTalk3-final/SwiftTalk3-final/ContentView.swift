@@ -16,18 +16,35 @@ struct ContentView: View {
         Asset(id: 4, title: "EXCHANGE POCKET", text1: "Reset in 40days")
     ]
     
+    init() {
+        // Bagian Atas Navigation Bar
+        let navBar = UINavigationBarAppearance()
+        navBar.backgroundColor = UIColor(Color.bgColor)
+        navBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().standardAppearance = navBar
+        
+        // Warna Back button
+        UINavigationBar.appearance().tintColor = .white
+        
+        // Bagian Bawah List
+        UITableView.appearance().backgroundColor = UIColor(Color.bgColor)
+    }
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(assets) { asset in
-                    NavigationLink(
-                        destination: Text(asset.title),
-                        label: {
-                            Text(asset.title)
-                        })
+        ZStack {
+            Color.bgColor.ignoresSafeArea(.all)
+            NavigationView {
+                List {
+                    ForEach(assets) { asset in
+                        NavigationLink(
+                            destination: Text(asset.title),
+                            label: {
+                                Text(asset.title)
+                            })
+                    }
                 }
+                .navigationBarTitle("HOME", displayMode: .inline)
             }
-            .navigationBarTitle("HOME", displayMode: .inline)
         }
     }
 }
