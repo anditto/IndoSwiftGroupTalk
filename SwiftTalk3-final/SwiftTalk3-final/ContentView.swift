@@ -36,12 +36,29 @@ struct ContentView: View {
             NavigationView {
                 List {
                     ForEach(assets) { asset in
-                        NavigationLink(
-                            destination: Text(asset.title),
-                            label: {
-                                Text(asset.title)
-                            })
+                        ZStack {
+                            Color.pocketColor
+                            VStack {
+                                HStack {
+                                    Text(asset.title)
+                                    Spacer()
+                                }.padding()
+                                HStack {
+                                    Spacer()
+                                    Text(asset.text1)
+                                }.padding()
+                            }
+                            NavigationLink(
+                                destination: Text(asset.title),
+                                label: {
+                                    EmptyView()
+                                })
+                                .opacity(0)
+                            }
+                        .cornerRadius(8)
                     }
+                    .listRowBackground(Color.bgColor)
+                    .foregroundColor(.white)
                 }
                 .navigationBarTitle("HOME", displayMode: .inline)
             }
