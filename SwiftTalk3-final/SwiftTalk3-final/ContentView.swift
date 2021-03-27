@@ -40,12 +40,12 @@ struct ContentView: View {
                             Color.pocketColor
                             VStack {
                                 HStack {
-                                    Text(asset.title)
+                                    Text(asset.title).font(.custom("Montserrat-Light", size:16))
                                     Spacer()
                                 }.padding()
                                 HStack {
                                     Spacer()
-                                    Text(asset.text1)
+                                    Text(asset.text1).font(.custom("Montserrat-Light", size: 14))
                                 }.padding()
                             }
                             NavigationLink(

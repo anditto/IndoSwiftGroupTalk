@@ -17,6 +17,7 @@
 		7359BE28260F7880005B5B1A /* SwiftTalk3_finalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359BE27260F7880005B5B1A /* SwiftTalk3_finalUITests.swift */; };
 		7359BE39260F78AE005B5B1A /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359BE38260F78AE005B5B1A /* AssetModel.swift */; };
 		7359BE3E260F7972005B5B1A /* DesignDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359BE3D260F7972005B5B1A /* DesignDefinitions.swift */; };
+		7359BE4F260F942B005B5B1A /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7359BE4E260F942B005B5B1A /* Montserrat-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7359BE29260F7880005B5B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7359BE38260F78AE005B5B1A /* AssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
 		7359BE3D260F7972005B5B1A /* DesignDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignDefinitions.swift; sourceTree = "<group>"; };
+		7359BE4E260F942B005B5B1A /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7359BE04260F787F005B5B1A /* SwiftTalk3-final */ = {
 			isa = PBXGroup;
 			children = (
+				7359BE4E260F942B005B5B1A /* Montserrat-Light.ttf */,
 				7359BE38260F78AE005B5B1A /* AssetModel.swift */,
 				7359BE3D260F7972005B5B1A /* DesignDefinitions.swift */,
 				7359BE05260F787F005B5B1A /* AppDelegate.swift */,
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7359BE4F260F942B005B5B1A /* Montserrat-Light.ttf in Resources */,
 				7359BE12260F7880005B5B1A /* LaunchScreen.storyboard in Resources */,
 				7359BE0F260F7880005B5B1A /* Preview Assets.xcassets in Resources */,
 				7359BE0C260F7880005B5B1A /* Assets.xcassets in Resources */,
